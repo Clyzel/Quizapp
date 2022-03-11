@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 
 const URL = "https://opentdb.com/api.php?amount=5&category=23&difficulty=easy&type=boolean";
 
-app.get("/api", (req, res) => {
+app.get('/api', (req, res) => {
     request(
       URL,
       function(error, response, body) {
